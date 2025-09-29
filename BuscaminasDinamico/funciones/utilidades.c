@@ -19,6 +19,7 @@ int numero_al_azar(int max) {
 // -----------------------------------
 #define ANSI_COLOR_RESET   "\x1b[0m"
 #define ANSI_COLOR_BOLD    "\x1b[1m"
+#define ANSI_COLOR_BLACK   "\x1b[30m"
 #define ANSI_COLOR_RED     "\x1b[31m"
 #define ANSI_COLOR_GREEN   "\x1b[32m"
 #define ANSI_COLOR_YELLOW  "\x1b[33m"
@@ -37,11 +38,12 @@ void printf_color(int color) {
         case 4:  printf(ANSI_COLOR_BOLD ANSI_COLOR_BLUE); break;
         case 5:  printf(ANSI_COLOR_BOLD ANSI_COLOR_MAGENTA); break;
         case 6:  printf(ANSI_COLOR_BOLD ANSI_COLOR_CYAN); break;
-        case 7:  printf(ANSI_COLOR_RED); break;
-        case 8:  printf(ANSI_COLOR_GREEN); break;
-        case 9:  printf(ANSI_COLOR_YELLOW); break;
+        case 7:  printf(ANSI_COLOR_BOLD ANSI_COLOR_RED); break;
+        case 8:  printf(ANSI_COLOR_BOLD ANSI_COLOR_GREEN); break;
+        case 9:  printf(ANSI_COLOR_BOLD ANSI_COLOR_YELLOW); break;
     }
 }
+
 
 void printf_reset_color() {
     printf_color(-1);
