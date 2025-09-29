@@ -1,4 +1,4 @@
-````markdown
+
 # 🕹️ Buscaminas en C (versión consola)
 
 Un clásico **Buscaminas** implementado en **C**, jugable directamente en la terminal.  
@@ -16,7 +16,7 @@ El proyecto está organizado de forma modular, separando la lógica del tablero,
 - Terminal o consola de comandos (Linux, macOS, Windows con WSL o MinGW)
 
 ## 🚀 Instalación y ejecución
-````
+
 Clona este repositorio:
 
 ```bash
